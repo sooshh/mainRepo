@@ -21,10 +21,10 @@ def main()->None:
             csv = readCSV(currentCommand[1]) #writes to csv after getting reading from the file chosen by the user
             print(f"{len(csv)-1} rows") #writes the amount of rows in the current stored csv list
         elif currentCommand[0] == "print":
-            printCSV(csv) 
+            printCSV(csv)
             print(f"{len(csv)-1} rows")
         elif currentCommand[0] == "select":
-            csv = selectCSV(csv, currentCommand[1], currentCommand[2],csv[0]) 
+            csv = selectCSV(csv, currentCommand[1], currentCommand[2],csv[0])
             print(f"{len(csv)-1} rows")
         elif currentCommand[0] == "columns":
             columnCSV(csv[0])
@@ -43,5 +43,5 @@ def main()->None:
             saveCSV(csv,currentCommand[1])
         else:
             print(f"{currentCommand[0]}: Command not recognized") #prints if the user inputs an invalid command option
-        
+
 main()
