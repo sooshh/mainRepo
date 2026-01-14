@@ -10,18 +10,19 @@ def sorty(listy):
     return sortedList
 
 def towerMaker(boxList,totalHeight):
-    hits = []
+    hitA = []
+    hitB = []
     for x in boxList:
         for y in boxList:
             for z in boxList:
                 if x != y and x != z and y != z:
                     scan = int(x)+int(y)+int(z)
                     if scan == int(totalHeight[0]):
-                        print(f"hit on {x} {y} {z} for {totalHeight[0]}")
-                        hits.append([x,y,z])
+                        hitA.append([int(x),int(y),int(z)])
                     elif scan == int(totalHeight[1]):
-                        print(f"hit on {x} {y} {z} for {totalHeight[1]}")
-                        hits.append([x,y,z])
+                        hitB.append([int(x),int(y),int(z)])
+    for x in range(len(hitA)):
+        print(hitA[x], hitB[x])
 
 def main():
     userIn = input().split()
