@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utg-8">
+        <title> Form Demo</title>
+        <meta name="author" content="Jim Davis">
+    </head>
+    <body>
+        <fieldset>
+            <legend> Please rate our form</legend>
+            <h1>Feedback Form</h1>
+            <p> Please fill out this form to help us improve our site.</p>
+            <form method="get" action="mailto:jim@alberon.org">
+                <input type="hidden" name="subject" value="Feedback Form">
+                <p>
+                    <label> First Name:
+                        <input name="firstname" type="text" size="25" maxlength="30" autofocus>
+                    </label>
+                    &nbsp;&nbsp;&nbsp;
+                    <label> Last Name:
+                        <input name="lastname" type="text" size="25" maxlength="30" autofocus>
+                    </label>
+                </p>
+                <p>
+                    <label>Password:    
+                        <input name="password" type="password" size="25" maxlength="16">
+                    </label>
+                </p>
+                
+                    <label> Comments: </label> <br/>
+                    <textarea name="comments" rows="4" cols="60" placeholder="Enter comments here"></textarea> </textarea>
+                <p>
+                    <label>E-mail Address:
+                        <input name="email" type="text" size="30" maxlength="40" placeholder="abc@xyz.ca">
+                    </label>
+                </p>
+                <p>
+                    <label>Telephone
+                        <input home="telephone" type="phone" size="15" placeholder="(403) 555-1234">
+                    </label>
+                </p>
+                <p>
+                    <h4>Things you liked:</h4>
+                    <label> 
+                        <input name="sitedesign" type="checkbox" value="Site Design">
+                        Site Design
+                    </label>
+                    &nbsp;&nbsp;&nbsp;
+                    <label> Links
+                        <input name="links" type="checkbox" value="Links">
+                    </label>
+                    &nbsp;&nbsp;&nbsp;
+                    <label> Ease of Use
+                        <input name="easeofuse" type="checkbox" value="easeofuse">
+                    </label>
+                    &nbsp;&nbsp;&nbsp;
+                    <label> Images
+                        <input name="images" type="checkbox" value="images">
+                    </label>
+                    &nbsp;&nbsp;&nbsp;
+                    Source Code
+                    <label> 
+                        <input name="sourcecode" type="checkbox" value="sourcecode">
+                    </label>
+                </p>
+                    <h4>How did you get to our site?</h4>
+                    <label>Search engine
+                        <input name="how" type="radio" value="searchengine">
+                    </label>
+                    <label>Links from another site
+                        <input name="how" type="radio" value="othersite">
+                    </label>
+                    <label>Reference in a book
+                        <input name="how" type="radio" value="bookreference">
+                    </label>
+                    <label>Other
+                        <input name="how" type="radio" value="other">
+                    </label>
+                <p>
+                    <label>Rate our site:
+                        <select name="rating" size="11" multiple autofocus="true">
+                            <option selected>Amazing </option>
+                            <option>10</option>
+                            <option>9</option>
+                            <option>8</option>
+                            <option>7</option>
+                            <option>6</option>
+                            <option>5</option>
+                            <option>4</option>
+                            <option>3</option>
+                            <option>2</option>
+                            <option>1</option>
+                            <option>Aweful</option>
+                        </select>
+                        </label>
+                </p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+        </fieldset>
+
+
+    </body>
+</html>

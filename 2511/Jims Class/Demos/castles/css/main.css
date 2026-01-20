@@ -1,0 +1,23 @@
+html {
+    font-size: 1rem;
+}
+body {
+    padding: 1rem;
+}
+h1 {
+    font-size: 2rem;
+}
+#castles {
+    max-width: 100%;
+    margin: auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+.pic {
+    background-color: royalblue; /* My Comment here */
+    color: white;
+    padding: 1rem;
+    height: 180px;
+}
+

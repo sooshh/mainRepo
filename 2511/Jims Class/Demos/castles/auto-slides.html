@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>W3.CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    .mySlides {display:none;}
+    </style>
+  </head>
+
+<body>
+
+  <h2 class="w3-center">Automatic Slideshow</h2>
+
+  <div class="w3-content w3-section">
+      <img class="mySlides" src="images/amber-fort.jpg" style="width:180%">
+      <img class="mySlides" src="images/aragonese.jpg" style="width:180%">
+      <img class="mySlides" src="images/bodiam.jpg" style="width:180%">
+      <img class="mySlides" src="images/bojnice.jpg" style="width:120%">
+      <img class="mySlides" src="images/bran.jpg" style="width:180%">
+      <img class="mySlides" src="images/bojnice.jpg" style="width:120%">
+      <img class="mySlides" src="images/caernarfon.jpg" style="width:150%">
+      <img class="mySlides" src="images/chapultepec.jpg" style="width:180%">
+      <img class="mySlides" src="images/chateau-de-chambord.jpg" style="width:180%">
+      <img class="mySlides" src="images/claypotts.jpg" style="width:90%">
+      <img class="mySlides" src="images/edinburgh.jpg" style="width:180%">
+      <img class="mySlides" src="images/elz.jpg" style="width:100%">
+      <img class="mySlides" src="images/glamis.jpg" style="width:100%">
+      <img class="mySlides" src="images/himeji.jpg" style="width:100%">
+      <img class="mySlides" src="images/hirosaki.jpg" style="width:100%">
+      <img class="mySlides" src="images/hirosaki-2.jpg" style="width:100%">
+      <img class="mySlides" src="images/hohenzollern.jpg" style="width:100%">
+      <img class="mySlides" src="images/kalmar.jpg" style="width:100%">
+      <img class="mySlides" src="images/kronborg.jpg" style="width:100%">
+      <img class="mySlides" src="images/leeds.jpg" style="width:100%">
+      <img class="mySlides" src="images/mont-saint-michel.jpg" style="width:100%">
+      <img class="mySlides" src="images/neuschwanstein.jpg" style="width:120%">
+      <img class="mySlides" src="images/predjama.jpg" style="width:180%">
+      <img class="mySlides" src="images/rhodes.jpg" style="width:180%">
+      <img class="mySlides" src="images/schloss-vianden.jpg" style="width:180%">
+      <img class="mySlides" src="images/shuri.jpg" style="width:180%">
+      <img class="mySlides" src="images/stirling.jpg" style="width:100%">
+      <img class="mySlides" src="images/tulira.jpg" style="width:100%">
+      <img class="mySlides" src="images/unknown.jpg" style="width:100%">
+      <img class="mySlides" src="images/warwick.jpg" style="width:100%">
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 1000); // Change image every 5 seconds
+    }
+  </script>
+
+  </body>
+</html>
