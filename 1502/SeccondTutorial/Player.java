@@ -12,10 +12,10 @@ public class Player {
         this.jerseyNum = 67;
         this.name = "Nelson";
     }
-    public Player(int jersey, String name) {
-        this.jerseyNum = jersey;
-        this.name = name;
-    }
+    //public Player(int jersey, String name) {
+        //this.jerseyNum = jersey;
+        //this.name = name;
+    //}
 
 
 
