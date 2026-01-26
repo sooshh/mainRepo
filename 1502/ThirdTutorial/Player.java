@@ -102,6 +102,9 @@ public class Player {
 
     //Methods:
     public int getAge() {
-        return -1;
+        //return -1;
+        int currentYr = LocalDate.now().getYear();
+        int birthYr = getDateOfBirth().getYear();
+        return (currentYr-birthYr);
     }
 }
