@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+    Author: OpenAI
+Title: GPT-3
+Date: 2021
+URL: https://openai.com/
+    When the page loads, the JavaScript function displayQueryStringValues is called. 
+    
+    This function uses the window.location.search property to get the query string of the current URL, 
+    then it splits the query string into an array by using the substring and split methods. 
+    
+    The function then iterates over the array, splits each element into a key-value pair, 
+    and concatenates the key and value to queryStringValues variable with a linebreak. 
+    
+    Finally, the function sets the innerHTML of an element with the id "queryStringValues" to 
+    the queryStringValues variable. The query string values will be displayed on the page within the <span> 
+        element, each one in a different line.
+    -->
+
+<html lang="en">
+  <head>
+    <script>
+      function displayQueryStringValues() {
+        var queryString = window.location.search;
+        var queryStringArray = queryString.substring(1).split("&");
+        var queryStringValues = "";
+        for (var i = 0; i < queryStringArray.length; i++) {
+          var keyValuePair = queryStringArray[i].split("=");
+          queryStringValues += keyValuePair[0] + ": " + keyValuePair[1] + "<br>";
+        }
+        document.getElementById("queryStringValues").innerHTML = queryStringValues;
+      }
+    </script>
+  </head>
+  <body onload="displayQueryStringValues()">
+    <div>The query string values are: <br><span id="queryStringValues"></span></div>
+  </body>
+</html>
