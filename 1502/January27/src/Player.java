@@ -105,4 +105,17 @@ public class Player {
         int birthYr = getDateOfBirth().getYear();
         return (currentYr-birthYr);
     }
+    
+    @Override
+    /**
+     * // put the desc of what the method is doing here
+     */
+    
+    public String toString() {
+        String formattedOutput = "";
+
+        formattedOutput += getName() + ", #:" + getJerseyNum() + ", age: " + getAge() + ", team: " + getTeam();
+
+        return formattedOutput;
+    } 
 }
