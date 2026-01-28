@@ -108,9 +108,9 @@ public class Player {
     
     @Override
     /**
-     * // put the desc of what the method is doing here
+     * This is a specific method for changing the regular return of a class object ("Player@677327b6") into somthing else, it does this by returning a string that is equal to the original @ and hexadecimal number.
+     * Which will look somtmthing like "Apoorve Chokshi, #:67, age: 0, team: null" in this case according to the methods code.
      */
-    
     public String toString() {
         String formattedOutput = "";
 
