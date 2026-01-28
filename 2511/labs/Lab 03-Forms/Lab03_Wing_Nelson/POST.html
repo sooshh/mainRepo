@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COMP 2511 - Lab 003</title>
+        <meta charset="utf-8">
+        <style>
+            table, tr, td {
+  				border: 1px solid black;
+                width: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>COMP 2511 Lab 003 - POST</h1>
+        <form id="formTwo" method="post" action="mailto:dwing998@mtroyal.ca">
+            Flight Information:
+            <table>
+                <tr> 
+                    <td>
+                        <dl>
+                            <dt>Flight type:</dt>
+                            <dd>
+                                <input type="radio" id="oneWayFormTwo" name="oneWay">
+                                <label for="oneWayFormTwo">One-Way</label>
+                                <input type="radio" id="twoWayFormTwo" name="twoWay">
+                                <label for="twoWayFormTwo">Two-Way</label>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>To:</dt> <!--IATA codes taken from https://www.nationsonline.org/oneworld/IATA_Codes/airport_code_list.htm-->
+                            <dd>
+                                <select name="Destination" id="destinationFormTwo">
+                                    <option>AAR</option>
+                                    <option>ABD</option>
+                                    <option>AEH</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>From:</dt> <!--IATA codes taken from https://www.nationsonline.org/oneworld/IATA_Codes/airport_code_list.htm-->
+                            <dd>
+                                <select name="startingPoint" id="startingPointFormTwo">
+                                    <option>ABZ</option>
+                                    <option>ABR</option>
+                                    <option>ABJ</option>
+                                </select>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>Departure date:</dt>
+                            <dd>
+                                <input type="date" id="departureDateFormTwo" name="departureDate" required>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>Arrival date:</dt>
+                            <dd>
+                                <input type="date" id="arrivalDateFormTwo" name="arrivalDate" required>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>Number of passengers</dt>
+                            <dd>
+                                <input type="number" min="1" id="numberOfPassengersFormTwo" name="numberOfPassengers" value="1">
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            Personal Information:
+            <table>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Name*</dt>
+                            <dd>
+                                <input placeholder="First, Last" id="nameFormTwo" name="name" required>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>Phone*</dt>
+                            <dd>
+                                <input type="tel" placeholder="123-456-7890" id="phoneNumberFormTwo" name="phoneNumber" required pattern="^[0-9-+\s()]*$">
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>Email*</dt>
+                            <dd>
+                                <input type="email" placeholder="name@mtroyal.ca" id="emailFormTwo" name="email" required> <br>
+                                <small>Must be your MRU GMail adress</small>
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            Extras:
+            <table>
+                <tr>
+                    <td>
+                        <dl>
+                            <dt>Additions:</dt>
+                            <dd>
+                                <input type="checkbox" id="hotelFormTwo" name="hotel">
+                                <label for="hotelFormTwo">Add a hotel?</label>
+                                <input type="checkbox" id="carFormTwo" name="car">
+                                <label for="carFormTwo">Add a car?</label>
+                                <input type="checkbox" id="guideFormTwo" name="guide">
+                                <label for="guideFormTwo">Contact a travel guide for you?</label>
+                            </dd>
+                        </dl>
+                        
+                        <dl>
+                            <dt>Special Concerns?</dt>
+                            <dd>
+                                <textarea cols="40" id="concernsFormTwo" name="concerns" placeholder="Anything else you would like to tell us?"></textarea>
+                            </dd>
+                        </dl>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <input type="submit"> <input type="reset">
+        </form>
+        <footer>
+            <small>
+                <br>
+                &copy; NW Nelson Wing. Jan 28, 2026
+            </small>
+	    </footer>
+    </body>
+</html>

@@ -86,22 +86,22 @@
                         <dl>
                             <dt>Name*</dt>
                             <dd>
-                                <input placeholder="First, Last" id="nameFormOne" name="name">
+                                <input placeholder="First, Last" id="nameFormOne" name="name" required>
                             </dd>
                         </dl>
                         
                         <dl>
                             <dt>Phone*</dt>
                             <dd>
-                                <input type="tel" placeholder="123-456-7890" id="phoneNumberFormOne" name="phoneNumber">
+                                <input type="tel" placeholder="123-456-7890" id="phoneNumberFormOne" name="phoneNumber" required pattern="^[0-9-+\s()]*$">
                             </dd>
                         </dl>
                         
                         <dl>
                             <dt>Email*</dt>
                             <dd>
-                                <input type="email" placeholder="name@mtroyal.ca" id="emailFormOne" name="email"> <br>
-                                Must be your MRU GMail adress
+                                <input type="email" placeholder="name@mtroyal.ca" id="emailFormOne" name="email" required> <br>
+                                <small>Must be your MRU GMail adress</small>
                             </dd>
                         </dl>
                     </td>
@@ -127,7 +127,7 @@
                         <dl>
                             <dt>Special Concerns?</dt>
                             <dd>
-                                <input type="text" id="concernsFormOne" name="concerns" size="50" placeholder="Anything else you would like to tell us?">
+                                <textarea cols="40" id="concernsFormOne" name="concerns" placeholder="Anything else you would like to tell us?"></textarea>
                             </dd>
                         </dl>
                     </td>
@@ -206,22 +206,22 @@
                         <dl>
                             <dt>Name*</dt>
                             <dd>
-                                <input placeholder="First, Last" id="nameFormTwo" name="name">
+                                <input placeholder="First, Last" id="nameFormTwo" name="name" required>
                             </dd>
                         </dl>
                         
                         <dl>
                             <dt>Phone*</dt>
                             <dd>
-                                <input type="tel" placeholder="123-456-7890" id="phoneNumberFormTwo" name="phoneNumber">
+                                <input type="tel" placeholder="123-456-7890" id="phoneNumberFormTwo" name="phoneNumber" required pattern="^[0-9-+\s()]*$">
                             </dd>
                         </dl>
                         
                         <dl>
                             <dt>Email*</dt>
                             <dd>
-                                <input type="email" placeholder="name@mtroyal.ca" id="emailFormTwo" name="email"> <br>
-                                Must be your MRU GMail adress
+                                <input type="email" placeholder="name@mtroyal.ca" id="emailFormTwo" name="email" required> <br>
+                                <small>Must be your MRU GMail adress</small>
                             </dd>
                         </dl>
                     </td>
@@ -247,7 +247,7 @@
                         <dl>
                             <dt>Special Concerns?</dt>
                             <dd>
-                                <input type="text" id="concernsFormTwo" name="concerns" size="50" placeholder="Anything else you would like to tell us?">
+                                <textarea cols="40" id="concernsFormTwo" name="concerns" placeholder="Anything else you would like to tell us?"></textarea>
                             </dd>
                         </dl>
                     </td>
