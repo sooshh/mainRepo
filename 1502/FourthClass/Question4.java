@@ -10,6 +10,6 @@ public class Question4 {
         int iNum = Integer.parseInt(num); //num = 123
         iNum = iNum*3; //num = 369
         System.out.println("value: " + iNum); // "value: 369"
-        keyboard.close();
+        //keyboard.close();
     }
 }
