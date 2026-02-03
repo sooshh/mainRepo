@@ -49,7 +49,7 @@ public class InteractivePlayer {
             
             //experimenting:
             System.out.println("What should " + processPlayer.getName() + "'s date of birth be? (YYYY MM DD)");
-            //instead of setting each variable individually i tried to call keyboard inside LocalDate.of(), and when i compiled it let me do each input on multiple lines or on the same line (seperated by spaces)
+            //instead of setting each variable individually i tried to call keyboard.nextInt() inside LocalDate.of(), and when i compiled it let me do each input on multiple lines or on the same line (seperated by spaces)
             processPlayer.setDateOfBirth(LocalDate.of(keyboard.nextInt(), keyboard.nextInt(), keyboard.nextInt()));
         } 
         
