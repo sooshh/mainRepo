@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Rekative and Absolute links</title>
+        <meta name="author" content="Jim Davis">
+        <link rel="stylesheet" href="styles/styles.css">
+    </head>
+    <body>
+        <header>
+                <h1>Examples of Addressing for Images & Hyperlinks</h1>
+                <h2>Images</h2>
+        </header>
+        <main>
+            <div id="top-left">
+                <!--Link to image in same folder as index.html-->
+                A Red Macintosh apple.<br>
+                <img src="apple.jpg" alt="Red Macintosh" title="Red Macintosh from project folder">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <div id="top-right">
+                <!--Link to image in an images folder which is in the same folder as index.html-->
+                A Granny Smith apple.<br>
+                <img src="images/apple.jpg" alt="Granny Smith" title="Granny Smith from images folder">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <br><br>
+            <div id="bottom-left">
+                <!--This loads the image in thee folder which contains our project-->
+                And which one now?
+                <img src="../apple.jpg" alt="Also Granny Smith" title="This imag4e comes from the folder which contains our project folder">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>  
+            <div ID="bottom-right">
+                <!--In Windows the root syntax displays the image in the project folder-->
+                Which apple do you see?<br>
+                <img src="/apple.jpg" alt="Nothing is displayed because it doesn't work in Windows" title="This should be from the root folder but there is no root folder in Windows">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <br><br>
+        </main>
+        <div id="links">
+            <h2>&nbsp;&nbsp;&nbsp;Links</h2>
+            <!--Link Addresses-->
+            <!--Relative link-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="page-2.html">Page 2</a>
+            <br><br>
+            <!--Link to page in a sub folder-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/page-3.html">Page 3</a>
+            <br><br>
+            <!--Link to another web site-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.mtroyal.ca">Mount Royal Web Site</a>
+            <br><br>
+            <!--Link to a resourse on another site-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://www.microsoft.com/en-ca/education/products/office">Microsoft Word</a>
+            <br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <!--Link to top of page-->
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#top">Top of Page</a>
+        </div>
+
+    </body>
+</html>

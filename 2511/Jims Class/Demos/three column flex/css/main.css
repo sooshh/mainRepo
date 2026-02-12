@@ -1,0 +1,43 @@
+header, footer{
+    background-color: lightgray;
+    padding: 2rem;
+}
+#wrapper{
+    display: flex;
+    background-color:lightsalmon;
+    padding: 50px;
+    /*justify-content: space-between;*/
+}
+
+#col-left{
+    background-color: lightcyan;
+    color:royalblue;
+    width: 33%;
+    padding: 20px;
+    height: 500px;
+    overflow: auto;
+}
+.spacer-left{
+    background-color: lightsalmon;
+    width: 10px;
+}
+#col-middle{
+    background-color: lightpink;
+    color:royalblue;
+    width: 33%;
+    padding: 20px;
+    height: 500px;
+    overflow: auto;
+}
+.spacer-right{
+    background-color: lightsalmon;
+    width: 10px;
+}
+#col-right{
+    background-color: lightgreen;
+    color:royalblue;
+    width: 33%;
+    padding: 20px;
+    height: 500px;
+    overflow: auto;
+}

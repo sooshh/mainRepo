@@ -1,0 +1,27 @@
+.flex-container {
+    /* 6 statement*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: DodgerBlue;
+    height: 100vh;
+    padding: 10px;
+}
+
+.row {
+    /* 3 statements*/
+    display: flex;
+    gap: 20px;
+    flex-grow: 3;
+}
+  
+.item {
+    /* 7 statements */
+    display: flex;
+    flex-grow: 2;
+    color: white;
+    background-color: #040404;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }

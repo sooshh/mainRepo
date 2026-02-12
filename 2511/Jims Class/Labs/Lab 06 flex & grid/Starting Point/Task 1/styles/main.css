@@ -1,0 +1,18 @@
+.wrapper {
+    display: grid;
+    height:100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /*grid-gap: 10px;*/
+}
+.item{
+  font-size: 30px;
+  background-color: pink;
+}
+#item4{
+  grid-column: 1/4;
+}
+#item5{
+  grid-column: 1/4;
+}
+
