@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            section {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2. 200px);
+                gap: 10px 20px;
+            }
+            div {
+                border: 2px solid rebeccapurple;
+                background-color: lightyellow;
+                /**
+                width: 300px;
+                height: 300px;
+                **/
+                color: blue;
+                size: 50px;
+            }
+            #itemA {
+                grid-column-start: 1;
+                grid-column-end: 3;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div id="itemA">a</div>
+            <div id="itemB">b</div>
+            <div id="itemC">c</div>
+            <div id="itemD">d</div>
+            <div id="itemE">e</div>
+            <div id="itemF">f</div>
+        </section>
+    </body>
+</html>
