@@ -23,7 +23,7 @@ public class Drink {
 
     public Drink(String name, int size, double basePrice) {       
         this.name = name;
-        this.size = 6;
+        this.size = size;
         this.basePrice = basePrice;
     }
 
