@@ -1,0 +1,11 @@
+Drink Name,Size (oz),Price (CAD)
+Original Blend Coffee,10,3.16
+Dark Roast Coffee,10,3.04
+French Vanilla,10,3.42
+Latte,12,4.69
+Mocha Latte,12,5.07
+Hot Chocolate,10,3.42
+Cappuccino,12,4.56
+Iced Capp,12,4.19
+Caramel Latte,12,5.07
+Strawberry Frozen Lemonade,12,4.69
